@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOs Alert Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="insere">
+        <h2>Gere seu Lembrete</h1>
+        <h1>Titulo</h2>
+        <input type="text" id="lembrete" placeholder="Lembrete" onkeyup="digitoutitulo()">
+        <h1>Mensagem</h1>
+        <textarea name="" id="msg" placeholder="Se até as variáveis precisam ser declaradas porque não me declarar pra você?" onkeyup="digitoumsg()"></textarea>
+        <button id="gerar" onclick="gerar()">gerar lembrete</button>
+    </div>
+    <div id="modal">
+        <h1 id="lembreterecebido"></h1>
+        <p id="msgrecebida"></p>
+        <div class="underline"></div>
+        <button id="ok" onclick="ok()">Ok</button>
+    </div>
+</body>
+<script>
+    var insere = document.getElementById('insere')
+    var modal = document.getElementById('modal')
+    var lembrete = document.getElementById('lembrete')
+    var msg = document.getElementById('msg')
+    var lembreterecebido = document.getElementById('lembreterecebido')
+    var msgrecebida = document.getElementById('msgrecebida')
+    lembreterecebido.innerText = 'Lembrete'
+    msgrecebida.innerText = 'Se até as variáveis precisam ser declaradas porque não me declarar pra você?'
+
+    function digitoutitulo(){
+        lembreterecebido.innerText = lembrete.value
+    }
+
+    function digitoumsg(){
+        msgrecebida.innerText = msg.value
+    }
+
+    function gerar(){
+        insere.style.display= 'none'
+        modal.style.display= 'block'
+    }
+
+    function ok(){
+        insere.style.display='block'
+        modal.style.display='none'
+    }
+
+</script>
+</html>

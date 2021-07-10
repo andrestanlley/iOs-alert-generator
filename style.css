@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(58, 58, 58);
+    overflow: hidden;
+}
+
+body{
+    background-image: url('data/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal{
+    display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0.9375rem;
+    padding: 0.4375rem 1.5625rem;
+    width: 15.625rem;
+}
+
+h1{
+    font-size: 1.2rem;
+}
+
+p{
+    margin-bottom: 0.625rem;
+}
+
+.underline{
+    width: 100%;
+    height: 0.0625rem;
+    background: linear-gradient(to right, transparent, #00000036, transparent)
+}
+
+button{
+    color: #54BFFD;
+    font-size: 1.3125rem;
+    background: transparent;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+
+#insere{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0.9375rem;
+    padding: 0.4375rem 1.5625rem;
+    width: 15.625rem;
+}
+
+#insere h2{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: .5rem 0rem;
+}
+
+#lembrete{
+    height: 2rem;
+    text-align: center;
+}
+
+#msg{
+    height: 5rem;
+}
+
+input, textarea{
+    border-radius: 6px;
+    resize: none;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+#gerar{
+    font-size: 1.3rem;
+    margin: .7rem 0rem;
+    line-height: 0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    color: white;
+    background-color: #54BFFD;
+    box-shadow: 2px 2px 0px #288ec9a9;
+    cursor: pointer;
+}
