@@ -33,6 +33,7 @@ h1{
 }
 
 p{
+    font-size: 1rem;
     margin-bottom: 0.625rem;
 }
 
@@ -59,6 +60,7 @@ button{
     border-radius: 0.9375rem;
     padding: 0.4375rem 1.5625rem;
     width: 15.625rem;
+    word-break: break-word;
 }
 
 #insere h2{
@@ -73,13 +75,14 @@ button{
 }
 
 #msg{
-    height: 5rem;
+    height: 6rem;
 }
 
 input, textarea{
-    border-radius: 6px;
+    border-radius: 0.375rem;
     resize: none;
     width: 100%;
+    padding: 0rem 0.3125rem;
 }
 
 input:focus{
@@ -91,9 +94,9 @@ input:focus{
     margin: .7rem 0rem;
     line-height: 0;
     padding: 1.5rem;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     color: white;
     background-color: #54BFFD;
-    box-shadow: 2px 2px 0px #288ec9a9;
+    box-shadow: 0.125rem 0.125rem 0rem #288ec9a9;
     cursor: pointer;
 }

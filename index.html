@@ -14,7 +14,7 @@
         <h1>Titulo</h2>
         <input type="text" id="lembrete" placeholder="Lembrete" onkeyup="digitoutitulo()">
         <h1>Mensagem</h1>
-        <textarea name="" id="msg" placeholder="Se até as variáveis precisam ser declaradas porque não me declarar pra você?" onkeyup="digitoumsg()"></textarea>
+        <textarea name="" id="msg" placeholder="Se até as variáveis precisam ser declaradas porque não me declarar para você?" onkeyup="digitoumsg()"></textarea>
         <button id="gerar" onclick="gerar()">gerar lembrete</button>
     </div>
     <div id="modal">
@@ -32,7 +32,7 @@
     var lembreterecebido = document.getElementById('lembreterecebido')
     var msgrecebida = document.getElementById('msgrecebida')
     lembreterecebido.innerText = 'Lembrete'
-    msgrecebida.innerText = 'Se até as variáveis precisam ser declaradas porque não me declarar pra você?'
+    msgrecebida.innerText = 'Se até as variáveis precisam ser declaradas porque não me declarar para você?'
 
     function digitoutitulo(){
         lembreterecebido.innerText = lembrete.value
